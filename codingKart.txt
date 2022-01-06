@@ -1,0 +1,122 @@
+who are all the employees  drawing the second  largest  salary for each city
+
+name,age,salary,city
+
+
+ select max(salary) top 2 from 
+
+
+Products
+
+product_id
+product_name
+product_type
+product_price
+
+Customer
+
+customer_id
+name
+phone
+
+Transaction
+
+
+trans_id
+customer_id
+product_id
+quantity
+Delivery_date
+
+
+Get all the orders placed by customers Called sachin. 
+
+
+
+
+Karthikeyan V12:03 PM
+Multi threading 
+Object Cloning 
+Karthikeyan V12:04 PM
+Clone()                                  Copy()
+IS A                HAS A
+Karthikeyan V12:06 PM
+Why do we store Sensitive data like  USER NAME , PWD in a Character Array Instead of String Data type 
+Final Finalize and Finally
+Karthikeyan V12:08 PM
+What are the Rest Methods you have experienced  for Rest Controllers 
+Wrapper Class     Boxing and Unboxing  
+Karthikeyan V12:09 PM
+How do you Create a Singleton Class 
+Can we override private methods in java
+Karthikeyan V12:12 PM
+Can you call start method twice in java (In a single  Thread)
+parameter -> expression body
+Karthikeyan V12:13 PM
+Can you declare constructor  as final
+Karthikeyan V12:14 PM
+ reduce()      
+ Collectors Methods
+ Difference bet 1.7 and 1.8  - For Each
+Karthikeyan V12:15 PM
+different ways to call garbage collector
+Input: ["jack","And","jack", "jill","jack","jill"]
+output: {"jack": 3, "jill": 2,"And":1}
+Key:Val 
+
+No of Occurrence of Each String in the Array - DS Collections 
+Karthikeyan V12:22 PM
+Spring and Spring Boot
+Annotation
+Karthikeyan V12:25 PM
+  How do u achieve Dependency Injection
+What are the Different types of Dependency Injections What type you had used / How ? 
+Karthikeyan V12:26 PM
+What Is OAuth?
+What’s Service Discovery? What’s the use of Service Discovery?  
+What's the Path variable? 
+What's the Request parameter?
+Karthikeyan V12:27 PM
+What framework did you use for writing Junits?
+What is component scan?
+What do the YAML Files do?
+Karthikeyan V12:29 PM
+How do you check and Increase  the JVM Performance?
+For Versioning Which you are using GITHUB/SVN
+Employee Table 
+ 
+Entities : Name Age Salary City
+who are all the employees  drawing the second  largest  salary for each city
+Karthikeyan V12:37 PM
+SELECT name, MAX(salary) AS salary FROM employee WHERE salary <  (SELECT MAX(salary) FROM employee) groupby city;
+Karthikeyan V12:38 PM
+Products
+
+product_id
+product_name
+product_type
+product_price
+
+Customer
+
+customer_id
+name
+phone
+
+Transaction
+
+
+trans_id
+customer_id
+product_id
+quantity
+Delivery_date
+Get all the orders placed by customers Called sachin. 
+Karthikeyan V12:41 PM
+transactions.product_id = products.id
+ customers.id = transactions.customer_id
+Karthikeyan V12:43 PM
+select * from products as p  inner joins transactions as t on t.product_id = p.product_id inner joins customers as c on c.customer_id = t.customer_id where customers.name = 'sachin
+Karthikeyan V12:45 PM
+Why Do We Need Containers For Microservices?
+What Are The Fundamentals Of Microservices Design?

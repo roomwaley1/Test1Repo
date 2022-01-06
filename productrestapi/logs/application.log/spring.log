@@ -1,0 +1,245 @@
+2021-12-29 20:25:34.635  INFO 13912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-29 20:25:34.765  INFO 13912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+2021-12-29 20:25:36.377  WARN 13912 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-12-29 20:25:36.504  INFO 13912 --- [main] com.hazelcast.system                     : [192.168.10.31]:5701 [dev] [4.2.2] Hazelcast 4.2.2 (20210811 - c38011e) starting at [192.168.10.31]:5701
+2021-12-29 20:25:37.028  INFO 13912 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.10.31]:5701 [dev] [4.2.2] No discovery strategy is applicable for auto-detection
+2021-12-29 20:25:37.164  INFO 13912 --- [main] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Using Multicast discovery
+2021-12-29 20:25:37.171  WARN 13912 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.10.31]:5701 [dev] [4.2.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-12-29 20:25:37.641  INFO 13912 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.10.31]:5701 [dev] [4.2.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-12-29 20:25:37.649  INFO 13912 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTING
+2021-12-29 20:25:39.913  INFO 13912 --- [main] c.h.internal.cluster.ClusterService      : [192.168.10.31]:5701 [dev] [4.2.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.10.31]:5701 - c03c2dd1-0460-4372-8e66-280a78e2fc23 this
+]
+
+2021-12-29 20:25:39.984  INFO 13912 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTED
+2021-12-29 20:25:40.725  INFO 13912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-29 20:25:42.594  INFO 13912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-29 20:25:42.716  INFO 13912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-29 20:25:42.933  INFO 13912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-29 20:25:43.071  INFO 13912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-29 20:25:43.301  INFO 13912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-29 20:25:43.925  INFO 13912 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-29 20:25:43.935  INFO 13912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:25:44.793  WARN 13912 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-29 20:25:46.687  INFO 13912 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-29 20:25:46.688  INFO 13912 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-29 20:25:46.698  INFO 13912 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-12-29 20:25:46.746  INFO 13912 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 58 ms
+2021-12-29 20:25:47.198  INFO 13912 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:25:47.203  INFO 13912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-29 20:25:47.239  INFO 13912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-29 20:33:15.980  INFO 11932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-29 20:33:16.060  INFO 11932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2021-12-29 20:33:18.005  WARN 11932 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-12-29 20:33:18.125  INFO 11932 --- [main] com.hazelcast.system                     : [192.168.10.31]:5701 [dev] [4.2.2] Hazelcast 4.2.2 (20210811 - c38011e) starting at [192.168.10.31]:5701
+2021-12-29 20:33:18.608  INFO 11932 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.10.31]:5701 [dev] [4.2.2] No discovery strategy is applicable for auto-detection
+2021-12-29 20:33:18.752  INFO 11932 --- [main] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Using Multicast discovery
+2021-12-29 20:33:18.758  WARN 11932 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.10.31]:5701 [dev] [4.2.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-12-29 20:33:19.110  INFO 11932 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.10.31]:5701 [dev] [4.2.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-12-29 20:33:19.120  INFO 11932 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTING
+2021-12-29 20:33:21.673  INFO 11932 --- [main] c.h.internal.cluster.ClusterService      : [192.168.10.31]:5701 [dev] [4.2.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.10.31]:5701 - 895a5d56-f89c-415d-a81d-a5352f0591ae this
+]
+
+2021-12-29 20:33:21.701  INFO 11932 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTED
+2021-12-29 20:33:22.438  INFO 11932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-29 20:33:22.879  INFO 11932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-29 20:33:22.989  INFO 11932 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-29 20:33:23.176  INFO 11932 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-29 20:33:23.314  INFO 11932 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-29 20:33:23.566  INFO 11932 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-29 20:33:24.034  INFO 11932 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-29 20:33:24.044  INFO 11932 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:33:24.901  WARN 11932 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-29 20:33:26.578  INFO 11932 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-29 20:33:26.578  INFO 11932 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-29 20:33:26.594  INFO 11932 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-12-29 20:33:26.658  INFO 11932 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 79 ms
+2021-12-29 20:33:27.085  INFO 11932 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Running shutdown hook... Current state: ACTIVE
+2021-12-29 20:33:27.086  INFO 11932 --- [hz.ShutdownThread] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is SHUTTING_DOWN
+2021-12-29 20:33:27.123  INFO 11932 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:33:27.126  INFO 11932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-29 20:33:27.140  INFO 11932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-29 20:35:49.636  INFO 18812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-29 20:35:49.781  INFO 18812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2021-12-29 20:35:52.264  WARN 18812 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-12-29 20:35:52.481  INFO 18812 --- [main] com.hazelcast.system                     : [192.168.10.31]:5701 [dev] [4.2.2] Hazelcast 4.2.2 (20210811 - c38011e) starting at [192.168.10.31]:5701
+2021-12-29 20:35:53.174  INFO 18812 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.10.31]:5701 [dev] [4.2.2] No discovery strategy is applicable for auto-detection
+2021-12-29 20:35:53.392  INFO 18812 --- [main] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Using Multicast discovery
+2021-12-29 20:35:53.399  WARN 18812 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.10.31]:5701 [dev] [4.2.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-12-29 20:35:53.940  INFO 18812 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.10.31]:5701 [dev] [4.2.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-12-29 20:35:53.957  INFO 18812 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTING
+2021-12-29 20:35:56.757  INFO 18812 --- [main] c.h.internal.cluster.ClusterService      : [192.168.10.31]:5701 [dev] [4.2.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.10.31]:5701 - 6fe8f232-e754-4281-ab25-1a7d0f7d2314 this
+]
+
+2021-12-29 20:35:56.777  INFO 18812 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTED
+2021-12-29 20:35:57.873  INFO 18812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-29 20:35:58.337  INFO 18812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-29 20:35:58.477  INFO 18812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-29 20:35:58.738  INFO 18812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-29 20:35:58.956  INFO 18812 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-29 20:35:59.245  INFO 18812 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-29 20:35:59.990  INFO 18812 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-29 20:36:00.005  INFO 18812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:36:01.427  WARN 18812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-29 20:36:04.059  INFO 18812 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-29 20:36:04.060  INFO 18812 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-29 20:36:04.083  INFO 18812 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-12-29 20:36:04.188  INFO 18812 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 128 ms
+2021-12-29 20:36:05.108  INFO 18812 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:36:05.116  INFO 18812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-29 20:36:05.172  INFO 18812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-29 20:41:37.961  INFO 20052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-29 20:41:38.109  INFO 20052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 2 JPA repository interfaces.
+2021-12-29 20:41:40.158  WARN 20052 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-12-29 20:41:40.348  INFO 20052 --- [main] com.hazelcast.system                     : [192.168.10.31]:5701 [dev] [4.2.2] Hazelcast 4.2.2 (20210811 - c38011e) starting at [192.168.10.31]:5701
+2021-12-29 20:41:41.055  INFO 20052 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.10.31]:5701 [dev] [4.2.2] No discovery strategy is applicable for auto-detection
+2021-12-29 20:41:41.257  INFO 20052 --- [main] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Using Multicast discovery
+2021-12-29 20:41:41.263  WARN 20052 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.10.31]:5701 [dev] [4.2.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-12-29 20:41:41.720  INFO 20052 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.10.31]:5701 [dev] [4.2.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-12-29 20:41:41.729  INFO 20052 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTING
+2021-12-29 20:41:44.151  INFO 20052 --- [main] c.h.internal.cluster.ClusterService      : [192.168.10.31]:5701 [dev] [4.2.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.10.31]:5701 - dfe770b3-ae0b-439a-87bc-3afc8ff450a7 this
+]
+
+2021-12-29 20:41:44.180  INFO 20052 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTED
+2021-12-29 20:41:45.121  INFO 20052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-29 20:41:45.578  INFO 20052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-29 20:41:45.707  INFO 20052 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-29 20:41:45.994  INFO 20052 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-29 20:41:46.501  INFO 20052 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-29 20:41:46.931  INFO 20052 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-29 20:41:47.835  INFO 20052 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-29 20:41:47.845  INFO 20052 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:41:49.291  WARN 20052 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-29 20:41:52.478  INFO 20052 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-29 20:41:52.478  INFO 20052 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-29 20:41:52.512  INFO 20052 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-12-29 20:41:52.807  INFO 20052 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 328 ms
+2021-12-29 20:41:53.515  WARN 20052 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2021-12-29 20:41:53.693  INFO 20052 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Running shutdown hook... Current state: ACTIVE
+2021-12-29 20:41:53.694  INFO 20052 --- [hz.ShutdownThread] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is SHUTTING_DOWN
+2021-12-29 20:41:53.719  WARN 20052 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Terminating forcefully...
+2021-12-29 20:41:53.720  INFO 20052 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Shutting down multicast service...
+2021-12-29 20:41:53.759  INFO 20052 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Shutting down connection manager...
+2021-12-29 20:41:53.780  INFO 20052 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:41:53.783  INFO 20052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-29 20:41:53.890  INFO 20052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-29 20:42:14.872  INFO 16448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-29 20:42:15.108  INFO 16448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 197 ms. Found 2 JPA repository interfaces.
+2021-12-29 20:42:17.445  WARN 16448 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-12-29 20:42:17.677  INFO 16448 --- [main] com.hazelcast.system                     : [192.168.10.31]:5701 [dev] [4.2.2] Hazelcast 4.2.2 (20210811 - c38011e) starting at [192.168.10.31]:5701
+2021-12-29 20:42:18.608  INFO 16448 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.10.31]:5701 [dev] [4.2.2] No discovery strategy is applicable for auto-detection
+2021-12-29 20:42:18.932  INFO 16448 --- [main] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Using Multicast discovery
+2021-12-29 20:42:18.944  WARN 16448 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.10.31]:5701 [dev] [4.2.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-12-29 20:42:19.624  INFO 16448 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.10.31]:5701 [dev] [4.2.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-12-29 20:42:19.636  INFO 16448 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTING
+2021-12-29 20:42:22.150  INFO 16448 --- [main] c.h.internal.cluster.ClusterService      : [192.168.10.31]:5701 [dev] [4.2.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.10.31]:5701 - b3683301-70f4-4d51-b7a2-b42b2ace57ae this
+]
+
+2021-12-29 20:42:22.168  INFO 16448 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTED
+2021-12-29 20:42:23.153  INFO 16448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-29 20:42:23.748  INFO 16448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-29 20:42:24.127  INFO 16448 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-29 20:42:24.515  INFO 16448 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-29 20:42:24.610  INFO 16448 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-29 20:42:24.894  INFO 16448 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-29 20:42:25.407  INFO 16448 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-29 20:42:25.417  INFO 16448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:42:27.752  WARN 16448 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-29 20:42:29.885  INFO 16448 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-29 20:42:29.885  INFO 16448 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-29 20:42:29.899  INFO 16448 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-12-29 20:42:29.994  INFO 16448 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 109 ms
+2021-12-29 20:42:30.676  INFO 16448 --- [main] c.h.i.p.impl.PartitionStateManager       : [192.168.10.31]:5701 [dev] [4.2.2] Initializing cluster partition table arrangement...
+2021-12-29 20:42:30.870  INFO 16448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:42:30.875  INFO 16448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-29 20:42:30.897  INFO 16448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-29 20:54:30.249  INFO 11900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-29 20:54:30.340  INFO 11900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2021-12-29 20:54:32.023  WARN 11900 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-12-29 20:54:32.144  INFO 11900 --- [main] com.hazelcast.system                     : [192.168.10.31]:5701 [dev] [4.2.2] Hazelcast 4.2.2 (20210811 - c38011e) starting at [192.168.10.31]:5701
+2021-12-29 20:54:32.670  INFO 11900 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.10.31]:5701 [dev] [4.2.2] No discovery strategy is applicable for auto-detection
+2021-12-29 20:54:32.818  INFO 11900 --- [main] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Using Multicast discovery
+2021-12-29 20:54:32.824  WARN 11900 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.10.31]:5701 [dev] [4.2.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-12-29 20:54:33.205  INFO 11900 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.10.31]:5701 [dev] [4.2.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-12-29 20:54:33.212  INFO 11900 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTING
+2021-12-29 20:54:35.539  INFO 11900 --- [main] c.h.internal.cluster.ClusterService      : [192.168.10.31]:5701 [dev] [4.2.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.10.31]:5701 - 1655cfcc-2e23-4f03-83d3-b78217ab7beb this
+]
+
+2021-12-29 20:54:35.553  INFO 11900 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTED
+2021-12-29 20:54:36.131  INFO 11900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-29 20:54:36.519  INFO 11900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-29 20:54:36.690  INFO 11900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-29 20:54:36.884  INFO 11900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-29 20:54:37.027  INFO 11900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-29 20:54:37.219  INFO 11900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-29 20:54:37.753  INFO 11900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-29 20:54:37.766  INFO 11900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:54:38.625  WARN 11900 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-29 20:54:40.305  INFO 11900 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-29 20:54:40.306  INFO 11900 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-29 20:54:40.321  INFO 11900 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-12-29 20:54:40.377  INFO 11900 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 71 ms
+2021-12-29 20:54:40.645  INFO 11900 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:54:40.656  INFO 11900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-29 20:54:40.684  INFO 11900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-29 20:55:42.821  INFO 12152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-29 20:55:42.913  INFO 12152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2021-12-29 20:55:44.343  WARN 12152 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-12-29 20:55:44.476  INFO 12152 --- [main] com.hazelcast.system                     : [192.168.10.31]:5701 [dev] [4.2.2] Hazelcast 4.2.2 (20210811 - c38011e) starting at [192.168.10.31]:5701
+2021-12-29 20:55:44.961  INFO 12152 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.10.31]:5701 [dev] [4.2.2] No discovery strategy is applicable for auto-detection
+2021-12-29 20:55:45.106  INFO 12152 --- [main] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Using Multicast discovery
+2021-12-29 20:55:45.113  WARN 12152 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.10.31]:5701 [dev] [4.2.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-12-29 20:55:45.465  INFO 12152 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.10.31]:5701 [dev] [4.2.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-12-29 20:55:45.473  INFO 12152 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTING
+2021-12-29 20:55:47.881  INFO 12152 --- [main] c.h.internal.cluster.ClusterService      : [192.168.10.31]:5701 [dev] [4.2.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.10.31]:5701 - cf8f9636-b6a0-4c6c-b0e4-9ad5630e84f8 this
+]
+
+2021-12-29 20:55:47.916  INFO 12152 --- [main] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is STARTED
+2021-12-29 20:55:48.466  INFO 12152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-29 20:55:48.895  INFO 12152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-29 20:55:49.013  INFO 12152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-29 20:55:49.242  INFO 12152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-29 20:55:49.370  INFO 12152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-29 20:55:49.602  INFO 12152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-29 20:55:50.149  INFO 12152 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-29 20:55:50.158  INFO 12152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:55:51.032  WARN 12152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-29 20:55:52.872  INFO 12152 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-29 20:55:52.873  INFO 12152 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-29 20:55:52.889  INFO 12152 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-12-29 20:55:52.979  INFO 12152 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 106 ms
+2021-12-29 20:55:53.183  INFO 12152 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Running shutdown hook... Current state: ACTIVE
+2021-12-29 20:55:53.185  INFO 12152 --- [hz.ShutdownThread] com.hazelcast.core.LifecycleService      : [192.168.10.31]:5701 [dev] [4.2.2] [192.168.10.31]:5701 is SHUTTING_DOWN
+2021-12-29 20:55:53.191  WARN 12152 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Terminating forcefully...
+2021-12-29 20:55:53.191  INFO 12152 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Shutting down multicast service...
+2021-12-29 20:55:53.213  INFO 12152 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.10.31]:5701 [dev] [4.2.2] Shutting down connection manager...
+2021-12-29 20:55:53.223  INFO 12152 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-29 20:55:53.226  INFO 12152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-29 20:55:53.251  INFO 12152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
